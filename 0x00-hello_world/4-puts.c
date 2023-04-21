@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * main - entry point
- * description: c for hello world
- * return: always 0 (success)
+ * main - entry point for code
+ * Return: 0 always or success
  */
 int main(void)
 {
