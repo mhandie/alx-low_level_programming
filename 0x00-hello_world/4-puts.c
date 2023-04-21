@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  * main - entry point
+ * description: c for hello world
  * return: always 0 (success)
  */
-/* c for hello world*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
