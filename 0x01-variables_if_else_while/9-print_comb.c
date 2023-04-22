@@ -10,9 +10,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; i < 30; i++)
+	for (i = 1; i < 28; i++)
 	putchar(i);
-	if (i != 29)
+	if (i != 27)
 	{
 		putchar(',');
 		putchar(' ');
