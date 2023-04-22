@@ -10,7 +10,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; i < 25; i++)
+	for (i = 1; i < 27; i++)
 	putchar(i);
 	if (i != 26)
 	{
