@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * main - check the code.
- * Description:  checks for lowercase character
- * Return: Always 0.
+ *main - check the code.
+ *@c: checks for lowercase character
+ *@_islower: function
+ *Return: Always 0.
  */
-
 int _islower(int c)
 {
-if i(c >= 'a'; && c <= 'z';)
+if (c >= 'a' && c <= 'z')
 {
 return (1);
 }
