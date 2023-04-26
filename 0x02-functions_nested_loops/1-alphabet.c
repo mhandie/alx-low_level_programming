@@ -1,16 +1,18 @@
 #include "main.h"
 /**
- * main - check the code
- *print_alphabet - prints the lowercase alphabet
- * Return: Always 0.
- *
- */
-
-void print_alphabet(void)
-/*print_alphabet - prints the lowercase alphabet*/
+* print_alphabet_10x - printing lower alphabets 10 times
+*
+* Return: nothing
+*/
+void print_alphabet_x10(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-_putchar(ch);
-_putchar('\n');
+char bets;
+int n = 0;
+
+while (n++ <= 9)
+{
+for (bets = ‘a’; bets <= ‘z’; bets++)
+_putchar(bets);
+_putchar(‘\n’);
+}
 }
