@@ -1,19 +1,22 @@
+#include "main.h"
 /**
- * main - causes an infinite loop
- * Return: 0
+ * main - determine whether number is positive, negative or zero.
+ * 0: is to be checked
+ * Return: 0 on success
  */
-int main(void)
+void positive_or_negative(int i)
 {
-int ch;
-
-printf("Infinite loop incoming :(\n");
-ch = 0;
-
-/*while (ch < 10)*/
-/*{*/
-/* putchar(ch);*/
-/*}*/
-
-printf("Infinite loop avoided! \\o/\n");
-return (0);
+	if (i < 0)
+	{
+		printf("%d is %s\n", i, "negative");
+	}
+	else if (i > 0)
+	{
+		printf("%d is %s\n", i, "positive");
+	}
+	else
+	{
+		printf("%d is %s\n", i, "zero");
+	}
+	return;
 }
