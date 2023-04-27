@@ -1,29 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+/**
+ * main - causes an infinite loop
+ * Return: 0
+ */
+int main(void)
+{
+int ch;
 
-// function prototype
-int positive_or_negative(int num);
+printf("Infinite loop incoming :(\n");
+ch = 0;
 
-int main() {
-int result;
+/*while (ch < 10)*/
+/*{*/
+/* putchar(ch);*/
+/*}*/
 
-// test case 1: input is 0
-result = positive_or_negative(0);
-if (result == 0) {
-printf("Test case 1 passed: 0 is neither positive nor negative.\n");
-} else {
-printf("Test case 1 failed: expected result to be 0 but got %d.\n", result);
-}
-return 0;
-}
-// function definition
-int positive_or_negative(int num) {
-if (num > 0) {
-return 1;
-} else if (num < 0) {
-return -1;
-} else {
-return 0;
-}
+printf("Infinite loop avoided! \\o/\n");
+return (0);
 }
