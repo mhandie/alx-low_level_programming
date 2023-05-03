@@ -7,13 +7,9 @@
 *
 * Return: 0 success
 */
-int main(void)
+void swap_int(int *a, int *b)
 {
-int a = 1;
-int b = 2;
-
-printf("Before swap: a = %d, b = %d\n", a, b);
-swap_int(&a, &b);
-printf("After swap: a = %d, b = %d\n", a, b);
-return (0);
+int temp = *a;
+*a = *b;
+*b = temp;
 }
