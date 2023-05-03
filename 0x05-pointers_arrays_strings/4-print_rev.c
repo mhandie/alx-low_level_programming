@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_rev - print in reverse 
- * @s: reversed string 
+ * print_rev - print in reverse
+ * @s: reversed string
  * Return: 0 success
  */
 void print_rev(char *s)
