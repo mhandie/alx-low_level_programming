@@ -6,9 +6,9 @@
  *
  * Return: 0
  */
-char* _strcat(char* dest, const char* src)
+char *_strcat(char *dest, const char *src)
 {
-char* ptr = dest;
+char *ptr = dest;
 
 while (*ptr != '\0')
 {
