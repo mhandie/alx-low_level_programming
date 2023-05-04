@@ -6,18 +6,25 @@
  *
  * Return: 0
  */
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-char *ptr = dest;
+int a;
 
-while (*ptr != '\0')
+int b;
+
+a = 0;
+while (dest[a] != '\0')
 {
-ptr++;
+a++;
 }
-while (*src != '\0')
+b = 0;
+while (src[b] != '\0')
 {
-*ptr++ = *src++;
+dest[a] = src[b];
+a++;
+b++;
 }
-*ptr = '\0';
+
+dest[a] = '\0';
 return (dest);
 }
