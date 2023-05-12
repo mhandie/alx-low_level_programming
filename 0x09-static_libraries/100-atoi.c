@@ -21,5 +21,5 @@ if (s[i] < '0' || s[i] > '9')
 break;
 num = num * 10 + (s[i] - '0');
 }
-return (sign * num);
+return (sign *num);
 }
