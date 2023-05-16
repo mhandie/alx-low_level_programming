@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *  * count_word - number of words
- *   * @s: string
- *    *
- *     * Return: number
- *      */
+ * count_word - number of words
+ * @s: string
+ *
+ * Return: number
+*/
 int count_word(char *s)
 {
 int flag, x, y;
@@ -42,3 +42,26 @@ matrix = (char **) malloc(sizeof(char *) * (words + 1));
 if (matrix == NULL)
 return (NULL);
 for (i = 0; i <= len; i++)
+{
+if (str[i] == ' ' || str[i] == '\0')
+{
+if (x)
+{
+end = i;
+tmp = (char *) malloc(sizeof(char) * (x + 1));
+if (tmp == NULL)
+return (NULL);
+while (start < end)
+*tmp++ = str[start++];
+*tmp = '\0';
+matrix[w] = tmp - x;
+w++;
+x = 0;
+}
+}
+else if (x++ == 0)
+start = i;
+}
+matrix[w] = NULL;
+return (matrix);
+}
