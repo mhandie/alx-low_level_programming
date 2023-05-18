@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 char *s1, *s2;
 int lent1, lent2, lent, k, carry, num1, num2, *result, a = 0;
 s1 = argv[1], s2 = argv[2];
-if (argc != 3 || num(s1) ||num(s2))
+if (argc != 3 || !is_num(s1) || !is_num(s2))
 errors();
 lent1 = _strlen(s1);
 lent2 = _strlen(s2);
