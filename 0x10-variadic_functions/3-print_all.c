@@ -2,15 +2,13 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_all - prints anything
- * @format: list of types of arguments
- */
+* print_all - print anything
+* @format: all types of arguments
+*/
 void print_all(const char * const format, ...)
 {
 int i = 0;
-
 char *str, *sep = "";
-
 va_list list;
 va_start(list, format);
 if (format)
@@ -35,6 +33,7 @@ str = "(nil)";
 printf("%s%s", sep, str);
 break;
 default:
+i++;
 continue;
 }
 sep = ", ";
