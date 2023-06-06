@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include <lists.h>
 unsigned int print_listint(const listint_t *h)
 {
