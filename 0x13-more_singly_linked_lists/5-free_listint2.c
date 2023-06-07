@@ -5,20 +5,18 @@
  * @head: pointer
  * @n: data
  *
- * Return: pointer to the new node, or NULL if it fails
+ * Return: null
  */
 void free_listint2(listint_t **head)
 {
-listint_t *loose;
-if (head == NULL || *head == NULL)
+listint_t *tmp;
+if (head == NULL)
+return;
+while (*head)
 {
-return (0);
+tmp = (*head)->next;
+free(*head);
+*head = tmp;
 }
-while (*head != NULL)
-{
-loose = *head;
-*head = (*(head))->next;
-free(loose);
-}
-head = NULL;
+*head = NULL;
 }
