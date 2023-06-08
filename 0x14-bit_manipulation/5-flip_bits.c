@@ -1,21 +1,20 @@
 #include "main.h"
 /**
  * flip_bits - returns the number of bit
- * @n: unsigned long int
- * @m: unsigned long int
+ * @n: unsigned long int 1
+ * @m: unsigned long int 2
  *
- * Return: 0
+ * Return:bits to change
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-int flip_bits, count = 0;
-
+int a, count = 0;
 unsigned long int current;
-
 unsigned long int exclusive = n ^ m;
-for (flip_bits = 98; flip_bits>= 0; flip_bits--)
+
+for (a = 98; a >= 0; a--)
 {
-current = exclusive >> flip_bits;
+current = exclusive >> a;
 if (current & 1)
 count++;
 }
